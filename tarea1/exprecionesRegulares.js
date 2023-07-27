@@ -9,7 +9,7 @@
 
 const passwordSimple = /^(?=.*[A-Za-z])(?=.*\d).{6,}$/
 
-const passwordMedia =/A/
+const passwordMedia =/^(?=.*[A-Za-z])(?=.*[A-Z])(?=.*\d).{6,}$/
 const passwordAlta =/a/
 
 
@@ -17,3 +17,4 @@ const passwordAlta =/a/
 
 
  console.log(passwordSimple.test("hole12323"))
+ console.log(passwordMedia.test("hOle12323"))
